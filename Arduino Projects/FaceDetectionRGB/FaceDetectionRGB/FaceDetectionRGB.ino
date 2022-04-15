@@ -1,6 +1,6 @@
 #include <cvzone.h>
 
-SerialData serialData (2, 1); //numOfvalRc,digitsPerValue
+SerialData serialData (2, 1); //numOfvalRec,digitsPerValue
 int valsRec[2];
 int pinFace = 11;
 int pinNotFace = 8;

@@ -116,6 +116,4 @@ def main(frame):
 
     # show the output frame
     cv2.imshow("MaskDetection", frame)
-    # cv2.waitKey(1)
-    # do a bit of cleanup
 

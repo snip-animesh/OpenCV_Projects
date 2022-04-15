@@ -83,7 +83,7 @@ maskNet = load_model("mask_detector.model")
 
 # initialize the video stream
 print("Starting Camera !! Be Ready !")
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 # loop over the frames from the video stream
 while True:
@@ -112,9 +112,10 @@ while True:
 
         # display the label and bounding box rectangle on the output
         # frame
-        cv2.putText(frame, label, (startX, startY - 10),cv2.FONT_HERSHEY_SIMPLEX,
-                    0.75, color, 2)
+        cv2.rectangle(frame, (startX, startY), (endX, startY-30), (255,255,255), cv2.FILLED)
         cv2.rectangle(frame, (startX, startY), (endX, endY), color, 3)
+        cv2.putText(frame, label, (startX, startY - 10), cv2.FONT_HERSHEY_SIMPLEX,
+                    0.75, color, 2)
 
     # show the output frame
     cv2.imshow("Frame", frame)

@@ -4,7 +4,7 @@ warnings.filterwarnings('ignore')
 import detect_mask,conAttendence
 import keyboard
 
-cap=cv.VideoCapture(0)
+cap=cv.VideoCapture(1)
 
 while True:
     success,img=cap.read()
