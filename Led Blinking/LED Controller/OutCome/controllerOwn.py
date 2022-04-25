@@ -1,11 +1,11 @@
 import pyfirmata
 
-arduino = pyfirmata.Arduino("COM6")
-led1 = arduino.get_pin('d:5:o')
-led2 = arduino.get_pin('d:6:o')
-led3 = arduino.get_pin('d:7:o')
-led4 = arduino.get_pin('d:8:o')
-led5 = arduino.get_pin('d:9:o')
+arduino = pyfirmata.Arduino("COM9")
+led1 = arduino.get_pin('d:2:o')
+led2 = arduino.get_pin('d:3:o')
+led3 = arduino.get_pin('d:4:o')
+led4 = arduino.get_pin('d:5:o')
+led5 = arduino.get_pin('d:6:o')
 
 
 def led(fingers):

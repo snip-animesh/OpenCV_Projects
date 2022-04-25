@@ -1,0 +1,3 @@
+0 Incorrect_Mask
+1 Masked
+2 NO_Mask
