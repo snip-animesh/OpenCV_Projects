@@ -47,16 +47,16 @@ class HandDetector():
 
 def main():
     pTime = 0
-    cap = cv2.VideoCapture(1)
+    cap = cv2.VideoCapture(0)
 
     detector = HandDetector()
 
     while True:
         succ, img = cap.read()
 
-        img = detector.findHands(img, draw=True)
+        img = detector.findHands(img)
 
-        lmList = detector.findPosition(img, draw=False)
+        lmList = detector.findPosition(img)
         try:
             print(lmList[4])
         except:

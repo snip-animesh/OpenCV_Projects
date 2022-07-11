@@ -13,7 +13,7 @@ accelerato_key_pressed = right_pressed
 time.sleep(2.0)
 current_key_pressed = set()
 
-videoCapture = cv.VideoCapture(0)
+videoCapture = cv.VideoCapture(1)
 mp_draw = mp.solutions.drawing_utils
 mp_hand = mp.solutions.hands
 
