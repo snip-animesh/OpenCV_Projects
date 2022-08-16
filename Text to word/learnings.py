@@ -33,8 +33,8 @@ def detecting_words(img,putText=True):
         if len(b) == 12:
             x, y, w, h = int(b[6]), int(b[7]), int(b[8]), int(b[9])
             cv2.rectangle(img, (x, y), (x + w, y + h), (0, 0, 255), 2)  # here they did proper formatting
-            if putText:
-                cv2.putText(img, b[-1], (x, y - 15), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 0, 255), 2)
+            # if putText:
+            #     cv2.putText(img, b[-1], (x, y - 15), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 0, 255), 2)
     return img
 
 
@@ -58,7 +58,7 @@ def detecting_digits(img,putText=True):
 
 
 if __name__ == "__main__":
-    img = cv2.imread('1.png')
+    img = cv2.imread('Resources/Snaps/2.JPG')
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     # print(pytesseract.image_to_string(img))
 
